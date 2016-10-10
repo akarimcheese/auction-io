@@ -19,3 +19,8 @@ Things to do
 - Give each painting a randomly assigned name
 - Allow user to see all won paintings
 - Perhaps add a chat room
+
+Screenshots:
+![Imgur](http://i.imgur.com/VqpztTS.png)
+![Imgur](http://i.imgur.com/AAWGnm5.png)
+![Imgur](http://i.imgur.com/2vgi3Rd.png)
