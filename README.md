@@ -26,6 +26,8 @@ Things to do later
 - Allow user to see all won paintings
 - Come up with a better scoring system
 - Come up with some upgrades
+- Occasional reserve price (sercret or public)
+- Dummy bids (when player count is low)
 
 
 Troll prevention
