@@ -19,11 +19,6 @@ Things to do sooner
 - Create a mode for sealed bid first/second price auctions
 - Create a mode for descending/ascending clock auctions
 - Give each painting a randomly assigned name
-- Troll prevention
--- Digit limit
--- Prevent bids higher than max value
--- Budget?
-
 
 Things to do later
 - Multi-item auctions (sequential, simultaneous multiround, vickrey, perhaps incentive auction with past winnings)
@@ -31,6 +26,12 @@ Things to do later
 - Allow user to see all won paintings
 - Come up with a better scoring system
 - Come up with some upgrades
+
+
+Troll prevention
+- Digit limit
+- Prevent bids higher than max value
+- Budget System. Start with budget, you get dividends for each round you participate in
 
 Screenshots:
 ![Imgur](http://i.imgur.com/VqpztTS.png)
