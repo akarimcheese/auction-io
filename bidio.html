@@ -1,0 +1,142 @@
+<!doctype HTML>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="bidio.css">
+    </head>
+    <body>
+        
+        <div id="leaderboardHolder">
+            <h3>Leaderboard</h3>
+            <table id="leaderboard">
+            <tr>
+            <td>1.</td>
+            <td class="rank" id="rank1"></td>
+            <td id="score1"></td>
+            </tr>
+            <tr>
+            <td>2.</td>
+            <td class="rank" id="rank2"></td>
+            <td id="score2"></td>
+            </tr>
+            <tr>
+            <td>3.</td>
+            <td class="rank" id="rank3"></td>
+            <td id="score3"></td>
+            </tr>
+            <tr>
+            <td>4.</td>
+            <td class="rank" id="rank4"></td>
+            <td id="score4"></td>
+            </tr>
+            <tr>
+            <td>5.</td>
+            <td class="rank" id="rank5"></td>
+            <td id="score5"></td>
+            </tr>
+            <tr>
+            <td>6.</td>
+            <td class="rank" id="rank6"></td>
+            <td id="score6"></td>
+            </tr>
+            <tr>
+            <td>7.</td>
+            <td class="rank" id="rank7"></td>
+            <td id="score7"></td>
+            </tr>
+            <tr>
+            <td>8.</td>
+            <td class="rank" id="rank8"></td>
+            <td id="score8"></td>
+            </tr>
+            <tr>
+            <td>9.</td>
+            <td class="rank" id="rank9"></td>
+            <td id="score9"></td>
+            </tr>
+            <tr>
+            <td>10.</td>
+            <td class="rank" id="rank10"></td>
+            <td id="score10"></td>
+            </tr>
+            </table>
+        </div>
+        
+        <div id="currentAuction">
+            <h3 id="auctionType">Standard Auction</h3>
+            <h4>Highest Bidder</h4>
+            <p class="info" id="highestBidder">None</p>
+            <h4>Highest Bid</h4>
+            <p class="info" id="highestBid">0</p>
+            <h4>Time left</h4>
+            <p class="info" id="timeLeft">0</p>
+        </div>
+        
+        <div id="upForBidDiv">
+            <img id="upForBid" src="https://unsplash.it/250/?random">
+        </div>
+        
+        <div id="bidDiv">
+            <input type="number" id="bidInput" placeholder="0">
+            <p></p>
+            <button type="button" id="bidEnter">Submit Bid</button>
+        </div>
+        
+
+        <div id="templateBid" class="signStick">
+            <div class="sign">
+                <h3>Joey Bids</h3>
+                <h1>$1000</h1>
+            </div>
+        </div>
+        
+        <div id="results">
+            <div id="resultsSign">
+                <h3>Winner</h3>
+                <p id="winnerReveal"></p>
+                <h3>Winning Bid</h3>
+                <p id="bidReveal"></p>
+                <h3>Item Value</h3>
+                <p id="valueReveal"></p>
+            </div>
+        </div>
+
+        
+        <div id="crowd">
+            <div class="crowd1"><div class="crowdBody1"></div></div>
+            <div class="crowd2"><div class="crowdBody2"></div></div>
+            <div class="crowd3"><div class="crowdBody3"></div></div>
+            <div class="crowd1"><div class="crowdBody1"></div></div>
+            <div class="crowd2"><div class="crowdBody2"></div></div>
+            <div class="crowd3"><div class="crowdBody3"></div></div>
+            <div class="crowd1"><div class="crowdBody1"></div></div>
+            <div class="crowd2"><div class="crowdBody2"></div></div>
+            <div class="crowd3"><div class="crowdBody3"></div></div>
+            <div class="crowd1"><div class="crowdBody1"></div></div>
+            <div class="crowd2"><div class="crowdBody2"></div></div>
+            <div class="crowd3"><div class="crowdBody3"></div></div>
+            <div class="crowd1"><div class="crowdBody1"></div></div>
+            <div class="crowd2"><div class="crowdBody2"></div></div>
+            <div class="crowd3"><div class="crowdBody3"></div></div>
+            <div class="crowd1"><div class="crowdBody1"></div></div>
+            <div class="crowd2"><div class="crowdBody2"></div></div>
+            <div class="crowd3"><div class="crowdBody3"></div></div>
+            <div class="crowd1"><div class="crowdBody1"></div></div>
+            <div class="crowd2"><div class="crowdBody2"></div></div>
+            <div class="crowd3"><div class="crowdBody3"></div></div>
+            <div class="crowd1"><div class="crowdBody1"></div></div>
+        </div>
+        
+        
+        <div id="startUp">
+            <div id="startUpDiv">
+                <input type="text" id="username" placeholder="Name">
+                <button type="button" id="usernameEnter">Join</button>
+            </div>
+        </div>
+        
+        
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="bidio.js"></script>
+    </body>
+</html>

@@ -1,0 +1,813 @@
+html, body {
+    		height: 100%;
+    		margin: 0;
+            overflow: hidden;
+}
+
+body {
+    background-color: powderblue;
+}
+
+#resultsSign p {
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+#resultsSign {
+    top: 300px;
+    left: -10px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 300px;
+    border: 10px inset burlywood;
+    overflow: hidden;
+    background-color: antiquewhite;
+    font-family: sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+#results {
+    top: -1000px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 300px;
+    border-left: 10px inset burlywood;
+    border-right:10px inset burlywood;
+    -webkit-transition: top 1s;
+    -moz-transition: top 1s;
+    -o-transition: top 1s;
+    transition: top 1s;
+}
+
+#templateBid {
+    left: -500px;
+}
+
+#currentAuction {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 350px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: lightgray;
+    opacity: 0.9;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.signStick {
+    position: relative;
+    width: 10px;
+    height: 100px;
+    background-color: burlywood;
+    margin-left: 100px;
+    -webkit-animation-name: bidAnim;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: bidAnim;
+    -moz-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: bidAnim;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.sign {
+    position: relative;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    background-color: antiquewhite;
+    border: 5px solid burlywood;
+    left: -100px;
+    top: -90px;
+    overflow: hidden;
+}
+
+#bidInput {
+    padding: 5px;
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    border: 5px solid skyblue;
+    border-radius: 5px;
+}
+
+#bidEnter {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    border-color: skyblue;
+    border-radius 5px;
+}
+
+#bidDiv {
+    position: relative;
+    text-align: center;
+    top: 50%;
+}
+
+#startUpDiv {
+    position: relative;
+    text-align: center;
+    top: 20%;
+}
+
+#username {
+    padding: 5px;
+    font-size: 30px;
+    color: white;
+    background-color: palevioletred;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
+#usernameEnter {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 30px;
+    color: white;
+    background-color: palevioletred;
+    border-color: white;
+    border-radius 5px;
+}
+
+b{
+    padding-left: 10px;
+}
+
+#startUp {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    background-color: palevioletred;
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -o-transition: left 1s;
+    transition: left 1s;
+}
+
+#upForBidDiv {
+    position: absolute;
+    text-align: center;
+    top: -100%;
+    width: 100%;
+    transition: top 0.5s;
+    -o-transition: top 0.5s;
+    -moz-transition: top 0.5s;
+    -webkit-transition: top 0.5s;
+}
+
+#upForBid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px groove  burlywood;
+}
+
+#crowd {
+    position: absolute;
+    top: 75%;
+}
+
+.crowdBody1 {
+    position:relative;
+    top: 70px;
+    width: 100px;
+    height: 200px;
+    margin-left: -10px;
+    background-color: darkslategray
+}
+
+.crowd1 {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+    background-color: darkslategray;
+    border-radius: 50px;
+}
+
+.crowdBody2 {
+    position:relative;
+    top: 75px;
+    width: 80px;
+    height: 220px;
+    background-color: darkslategray;
+}
+
+.crowd2 {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: darkslategray;
+    border-radius: 50px;
+}
+
+.crowdBody3 {
+    position:relative;
+    top: 60px;
+    width: 110px;
+    height: 190px;
+    margin-left: -15px;
+    background-color: darkslategray
+}
+
+.crowd3 {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-top: 50px;
+    background-color: darkslategray;
+    border-radius: 50px;
+}
+
+#leaderboardHolder {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 350px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: lightgray;
+    opacity: 0.9;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
+h4 {
+    padding-left: 10px;
+}
+
+table {
+    margin-top: -15px;
+    margin-left: 10px;
+}
+
+td {
+    padding-top: 10px;
+}
+
+.rank {
+    width: 150px;
+    overflow: hidden;
+}
+
+.info {
+    text-align: right;
+    padding-right:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes bidAnim {
+    0%   {opacity: 0;
+          -webkit-transform: rotate(160deg);}
+    10%  {opacity: 1;}
+    10%  {-webkit-transform: rotate(-5deg);}
+    90%  {-webkit-transform: rotate(5deg);}
+    90%  {opacity: 1;}
+    100% {opacity: 0;
+        -webkit-transform: rotate(-160deg);}
+}
+
+
+@keyframes bidAnim {
+    0%   {opacity: 0;
+          transform: rotate(160deg);}
+    10%  {opacity: 1;}
+    10%  {transform: rotate(-5deg);}
+    90%  {transform: rotate(5deg);}
+    90%  {opacity: 1;}
+    100% {opacity: 0;
+        transform: rotate(-160deg);}
+}
+
+@-moz-keyframes bidAnim {
+    0%   {opacity: 0;
+          -moz-transform: rotate(160deg);}
+    10%  {opacity: 1;}
+    10%  {-moz-transform: rotate(-5deg);}
+    90%  {-moz-transform: rotate(5deg);}
+    90%  {opacity: 1;}
+    100% {opacity: 0;
+        -moz-transform: rotate(-160deg);}
+}
+
+
+
+
+
+
+#opp-container {
+    overflow: hidden;
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    width: 100px;
+    height: 50px;
+    transition: left 0.5s;
+    -o-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+    -webkit-transition: left 0.5s;
+}
+            
+#opp-car-top {
+    position: absolute;
+    top: 0px;
+    left: 132px;
+    border-bottom: 50px solid lightblue;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 50px;
+    transition: margin-left 0.5s;
+    animation: approachTop 10s infinite linear;
+    -o-transition: margin-left 0.5s;
+    -o-animation: approachTop 10s infinite linear;
+    -moz-transition: margin-left 0.5s;
+    -mozanimation: approachTop 10s infinite linear;
+    -webkit-transition: margin-left 0.5s;
+    -webkit-animation: approachTop 10s infinite linear;
+}
+            
+@keyframes approachTop {
+    0% {top: -75px;
+            left: 125px;
+            border-bottom: 50px solid lightblue;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            height: 0;
+            width: 20px;
+        }
+    90% {top: -75px;
+            left: 125px;
+            border-bottom: 50px solid lightblue;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            height: 0;
+            width: 20px;
+        }
+    100% {top: 25px;
+            left: 100px;
+            border-bottom: 50px solid lightblue;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            height: 0;
+            width: 50px;
+        }
+}
+
+@-webkit-keyframes approachTop {
+     0% {top: -75px;
+            left: 125px;
+            border-bottom: 50px solid lightblue;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            height: 0;
+            width: 20px;
+        }
+    90% {top: -75px;
+            left: 125px;
+            border-bottom: 50px solid lightblue;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            height: 0;
+            width: 20px;
+        }
+    100% {top: 25px;
+            left: 100px;
+            border-bottom: 50px solid lightblue;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            height: 0;
+            width: 50px;
+        }
+}
+
+@-o-keyframes approachTop {
+     0% {top: -75px;
+            left: 125px;
+            border-bottom: 50px solid lightblue;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            height: 0;
+            width: 20px;
+        }
+    90% {top: -75px;
+            left: 125px;
+            border-bottom: 50px solid lightblue;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            height: 0;
+            width: 20px;
+        }
+    100% {top: 25px;
+            left: 100px;
+            border-bottom: 50px solid lightblue;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            height: 0;
+            width: 50px;
+        }
+}
+            
+@-moz-keyframes approachTop {
+     0% {top: -75px;
+            left: 125px;
+            border-bottom: 50px solid lightblue;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            height: 0;
+            width: 20px;
+        }
+    90% {top: -75px;
+            left: 125px;
+            border-bottom: 50px solid lightblue;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            height: 0;
+            width: 20px;
+        }
+    100% {top: 25px;
+            left: 100px;
+            border-bottom: 50px solid lightblue;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            height: 0;
+            width: 50px;
+        }
+}
+            
+#opp-car {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    width: 50px;
+    height: 25px;
+    background: blue;
+    animation: approach 10s infinite linear;
+    -o-animation: approach 10s infinite linear;
+    -moz-animation: approach 10s infinite linear;
+    -webkit-animation: approach 10s infinite linear;
+}
+
+@keyframes approach {
+    0% {top: 50px;
+        left: 35px;
+        width: 30px;
+        height: 15px;
+        }
+    90% {top: 25px;
+        left: 25px;
+        width: 50px;
+        height: 25px;
+        }
+    100% {width: 100px;
+         height: 50px;
+         left: 0px;
+         top: 125px;
+        }
+}
+
+@-o-keyframes approach {
+    0% {top: 50px;
+        left: 35px;
+        width: 30px;
+        height: 15px;
+        }
+    90% {top: 25px;
+        left: 25px;
+        width: 50px;
+        height: 25px;
+        }
+    100% {width: 100px;
+         height: 50px;
+         left: 0px;
+         top: 125px;
+        }
+}
+            
+@-moz-keyframes approach {
+    0% {top: 50px;
+        left: 35px;
+        width: 30px;
+        height: 15px;
+        }
+    90% {top: 25px;
+        left: 25px;
+        width: 50px;
+        height: 25px;
+        }
+    100% {width: 100px;
+         height: 50px;
+         left: 0px;
+         top: 125px;
+        }
+}
+            
+@-webkit-keyframes approach {
+    0% {top: 50px;
+        left: 35px;
+        width: 30px;
+        height: 15px;
+        }
+    90% {top: 25px;
+        left: 25px;
+        width: 50px;
+        height: 25px;
+        }
+    100% {width: 100px;
+         height: 50px;
+         left: 0px;
+         top: 125px;
+        }
+}
+            
+#player-car-back {
+    position: absolute;
+    left: 400px;
+    top: 225px;
+    height: 50px;
+    width: 100px;
+    background: darkred;
+    transition: left 0.5s;
+    -o-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+    -webkit-transition: left 0.5s;
+}
+#player-car-top {
+    position: absolute;
+    top: 175px;
+    left: 400px;
+    border-bottom: 50px solid red;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 50px;
+    transition: left 0.5s;
+    -o-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+    -webkit-transition: left 0.5s;
+}
+#road {
+    overflow: hidden;
+    position:absolute;
+    top: 150px;
+    left: 300px;
+    height: 150px;
+    width: 300px;
+    background: grey;
+}
+#road-black {
+	border-bottom: 150px solid black;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	height: 0;
+	width: 100px;
+}
+#road-yellow {
+    position: absolute;
+    top: -30px;
+    left: 100px;
+    border-bottom: 30px solid yellow;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 15px;
+    animation: lane 0.6s infinite ease-in;
+    -o-animation: lane 0.6s infinite ease-in;
+    -moz-animation: lane 0.6s infinite ease-in;
+    -webkit-animation: lane 0.6s infinite ease-in;
+}
+
+@keyframes lane {
+    from {  top: -30px;
+            left: 132px;
+            border-bottom: 30px solid yellow;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            height: 0;
+            width: 15px;
+        }
+    to   {  top: 230px;
+            left: 130px;
+            border-bottom: 50px solid yellow;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            height: 0;
+            width: 20px;
+    }
+}
+
+@-o-keyframes lane {
+    from {  top: -30px;
+            left: 132px;
+            border-bottom: 30px solid yellow;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            height: 0;
+            width: 15px;
+        }
+    to   {  top: 230px;
+            left: 130px;
+            border-bottom: 50px solid yellow;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            height: 0;
+            width: 20px;
+    }
+}
+
+@-moz-keyframes lane {
+    from {  top: -30px;
+            left: 132px;
+            border-bottom: 30px solid yellow;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            height: 0;
+            width: 15px;
+        }
+    to   {  top: 230px;
+            left: 130px;
+            border-bottom: 50px solid yellow;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            height: 0;
+            width: 20px;
+    }
+}
+            
+@-webkit-keyframes lane {
+    from {  top: -30px;
+            left: 132px;
+            border-bottom: 30px solid yellow;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            height: 0;
+            width: 15px;
+        }
+    to   {  top: 230px;
+            left: 130px;
+            border-bottom: 50px solid yellow;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            height: 0;
+            width: 20px;
+    }
+}
+            
+#minimap {
+    position: absolute;
+    left: 350px;
+    top: 350px;
+    width: 200px;
+    height: 5px;
+    background: black;
+}
+            
+#redbloop {
+    position: absolute;
+    width: 12px;
+	height: 12px;
+	background: red;
+	border-radius: 6px;
+    top: -3px;
+    left: -3px;
+    animation: redBloopApproach 10s infinite linear;
+    -o-animation: redBloopApproach 10s infinite linear;
+    -moz-animation: redBloopApproach 10s infinite linear;
+    -webkit-animation: redBloopApproach 10s infinite linear;
+}
+            
+@keyframes redBloopApproach {
+    from {  left: -3px;
+        }
+    to   {  left: 97px;
+    }
+}
+            
+@-o-keyframes redBloopApproach {
+    from {  left: -3px;
+        }
+    to   {  left: 97px;
+    }
+}
+            
+@-moz-keyframes redBloopApproach {
+    from {  left: -3px;
+        }
+    to   {  left: 97px;
+    }
+}
+
+@-webkit-keyframes redBloopApproach {
+    from {  left: -3px;
+        }
+    to   {  left: 97px;
+    }
+}
+            
+#bluebloop {
+    position: absolute;
+    background: blue;
+    width: 12px;
+	height: 12px;
+	border-radius: 6px;
+    top: -3px;
+    left: 197px;
+    animation: blueBloopApproach 10s infinite linear;
+    -o-animation: blueBloopApproach 10s infinite linear;
+    -moz-animation: blueBloopApproach 10s infinite linear;
+    -webkit-animation: blueBloopApproach 10s infinite linear;
+}
+            
+@keyframes blueBloopApproach {
+    from {  left: 197px;
+    }
+    to   {  left: 97px;
+    }
+}
+            
+@-o-keyframes blueBloopApproach {
+    from {  left: 197px;
+    }
+    to   {  left: 97px;
+    }
+}
+            
+@-moz-keyframes blueBloopApproach {
+    from {  left: 197px;
+    }
+    to   {  left: 97px;
+    }
+}
+
+@-webkit-keyframes blueBloopApproach {
+    from {  left: 197px;
+        }
+    to   {  left: 97px;
+    }
+}
+            
+#break1 {
+    position: absolute;
+    top: -3px;
+    left: 90px;
+    width: 2px;
+    height: 11px;
+    background: black;
+}
+            
+#break2 {
+    position: absolute;
+    top: -3px;
+    left: 112px;
+    width: 2px;
+    height: 11px;
+    background: black;
+}
+            
+.pause {
+        -webkit-animation-play-state: paused !important; 
+        -moz-animation-play-state: paused !important; 
+        -o-animation-play-state: paused !important;
+        animation-play-state: paused !important;
+   }
+            
+.unleash {
+        overflow: visible !important;
+   }
+
