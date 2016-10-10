@@ -28,6 +28,7 @@ Things to do later
 - Come up with some upgrades
 - Occasional reserve price (sercret or public)
 - Dummy bids (when player count is low)
+- Bonus points for making sure a certain player (probably on leaderboard) does not win
 
 
 Troll prevention
