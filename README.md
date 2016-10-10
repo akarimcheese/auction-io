@@ -19,7 +19,10 @@ Things to do sooner
 - Create a mode for sealed bid first/second price auctions
 - Create a mode for descending/ascending clock auctions
 - Give each painting a randomly assigned name
-- Prevent trolls from submitting high bids then leaving to reset score (Possibly by way of catching absurdly high values or by preventing bids past max item value) 
+- Troll prevention
+-- Digit limit
+-- Prevent bids higher than max value
+-- Budget?
 
 
 Things to do later
