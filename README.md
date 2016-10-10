@@ -6,6 +6,7 @@ Things to do
 - Make sure time left to bid reliably syncs between clients
 - Figure out better time limit system
 - Change bidding mechanism from inputting your own number to adding increments to current winning bid
+- Implement proxy bidding
 - Add title and some information on login screen
 - Fix layout so it looks nice on all browser sizes
 - Create a mode for Independent Private Values
