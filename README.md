@@ -11,6 +11,7 @@ Things to do
 - Create a mode for Independent Private Values
 - Remove user from leaderboard when they disconnect
 - Display user's score somewhere
+- Figure out what image IDs are missing from unsplash.it
 - Allow for 'hints' on item value (Either reveal value, # of digits, or specific digit)
 - Create a mode for sealed bid first/second price auctions
 - Create a mode for descending/ascending clock auctions
