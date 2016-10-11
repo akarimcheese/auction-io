@@ -1,6 +1,6 @@
 # auction-io
 
-Try it out at https://calm-harbor-50435.herokuapp.com/
+Try it out at http://www.gametheor.io/
 
 Things to do now
 - Make sure time left to bid reliably syncs between clients
