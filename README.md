@@ -5,7 +5,7 @@ Try it out at https://calm-harbor-50435.herokuapp.com/
 Things to do now
 - Make sure time left to bid reliably syncs between clients
 - Fix layout so it looks nice on all browser sizes
-- Remove user from leaderboard when they disconnect
+- ~~Remove user from leaderboard when they disconnect~~ Fixed, will be in next code push
 
 Things to do sooner
 - Figure out better time limit system
