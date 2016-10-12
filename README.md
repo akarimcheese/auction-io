@@ -8,6 +8,7 @@ Things to do now
 - ~~Remove user from leaderboard when they disconnect~~ Fixed, will be in next code push
 
 Things to do sooner
+- Vet input for html/js injection
 - Figure out better time limit system
 - Change bidding mechanism from inputting your own number to adding increments to current winning bid
 - Implement client-side proxy bidding
