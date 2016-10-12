@@ -22,6 +22,7 @@ Things to do sooner
 - Give each painting a randomly assigned name
 
 Things to do later
+- Random game theory events (volunteer's dilema)
 - Multi-item auctions (sequential, simultaneous multiround, vickrey, perhaps incentive auction with past winnings)
 - Chat room
 - Allow user to see all won paintings
