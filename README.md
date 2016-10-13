@@ -25,7 +25,7 @@ Things to do later
 - Random game theory events (volunteer's dilema)
 - Multi-item auctions (sequential, simultaneous multiround, vickrey, perhaps incentive auction with past winnings)
 - Chat room
-- Allow user to see all won paintings
+- Allow user to see all won paintings, possibly hold incentive auctions
 - Come up with a better scoring system
 - Come up with some upgrades
 - Occasional reserve price (sercret or public)
